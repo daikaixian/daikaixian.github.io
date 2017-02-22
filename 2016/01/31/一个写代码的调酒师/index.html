@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="调酒师," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Water's Life" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;在一家叫”不空”的酒吧当周末义工接近两个月了.快要过年了,调酒的手艺学得也算小有所成,是时候装一波十三了哈哈哈哈哈哈哈哈.
+店长&amp;#160; &amp;#160; &amp;#160; &amp;#160; 先来说一下酒吧的店长吧:Django,一条与哈士奇,萨摩耶并称”雪地三傻”的阿拉斯加.它是老板养的一条狗,据说开酒吧的目的是为了攒够钱送Django回阿拉斯加去拉">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个写代码的调酒师">
+<meta property="og:url" content="http://codingwater.org/2016/01/31/一个写代码的调酒师/index.html">
+<meta property="og:site_name" content="Water's Life">
+<meta property="og:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;在一家叫”不空”的酒吧当周末义工接近两个月了.快要过年了,调酒的手艺学得也算小有所成,是时候装一波十三了哈哈哈哈哈哈哈哈.
+店长&amp;#160; &amp;#160; &amp;#160; &amp;#160; 先来说一下酒吧的店长吧:Django,一条与哈士奇,萨摩耶并称”雪地三傻”的阿拉斯加.它是老板养的一条狗,据说开酒吧的目的是为了攒够钱送Django回阿拉斯加去拉">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/django1.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/django2.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/django3.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/django4.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/django5.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife1.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife2.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife3.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife4.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/singer1.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/singer2.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/singer3.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish1.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish2.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish3.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish4.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish5.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish6.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish7.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish8.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish9.jpeg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish10.jpeg">
+<meta property="og:updated_time" content="2016-04-09T05:06:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一个写代码的调酒师">
+<meta name="twitter:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;在一家叫”不空”的酒吧当周末义工接近两个月了.快要过年了,调酒的手艺学得也算小有所成,是时候装一波十三了哈哈哈哈哈哈哈哈.
+店长&amp;#160; &amp;#160; &amp;#160; &amp;#160; 先来说一下酒吧的店长吧:Django,一条与哈士奇,萨摩耶并称”雪地三傻”的阿拉斯加.它是老板养的一条狗,据说开酒吧的目的是为了攒够钱送Django回阿拉斯加去拉">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 一个写代码的调酒师 | Water's Life </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Water's Life</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                一个写代码的调酒师
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Posted on
+            <time itemprop="dateCreated" datetime="2016-01-31T14:23:46+08:00" content="2016-01-31">
+              2016-01-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; In
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/业余生活/" itemprop="url" rel="index">
+                    <span itemprop="name">业余生活</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/31/一个写代码的调酒师/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/31/一个写代码的调酒师/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>&#160; &#160; &#160; &#160;在一家叫”不空”的酒吧当周末义工接近两个月了.快要过年了,调酒的手艺学得也算小有所成,是时候装一波十三了哈哈哈哈哈哈哈哈.</p>
+<h2 id="u5E97_u957F"><a href="#u5E97_u957F" class="headerlink" title="店长"></a>店长</h2><p>&#160; &#160; &#160; &#160; 先来说一下酒吧的店长吧:Django,一条与哈士奇,萨摩耶并称”雪地三傻”的阿拉斯加.它是老板养的一条狗,据说开酒吧的目的是为了攒够钱送Django回阿拉斯加去拉雪橇…真是个冻人的故事.<br>&#160; &#160; &#160; &#160;好多妹子来酒吧都是冲着Django来的,有时候Django不在店里,妹子居然转身就走…</p>
+<ul>
+<li>想出去玩的Django<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/django1.jpeg" alt="此处输入图片的描述"></li>
+<li>生无可恋的Django<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/django2.jpeg" alt="此处输入图片的描述"></li>
+<li>傲娇的Django<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/django3.jpeg" alt="此处输入图片的描述"></li>
+<li>现在的Django,已经8个月大了.<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/django4.jpeg" alt="此处输入图片的描述"></li>
+<li>圣诞节的Django<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/django5.jpeg" alt="此处输入图片的描述"> </li>
+</ul>
+<h2 id="u8001_u677F_u5A18"><a href="#u8001_u677F_u5A18" class="headerlink" title="老板娘"></a>老板娘</h2><p>&#160; &#160; &#160; &#160;老板就略过不说了,不过老板娘不能略过,废话不多说,上图.</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife1.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife2.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife3.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/bosswife4.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;咳咳,上一张不要看太久.</p>
+<h2 id="u9A7B_u5531"><a href="#u9A7B_u5531" class="headerlink" title="驻唱"></a>驻唱</h2><p>&#160; &#160; &#160; &#160;酒吧面积其实算比较小的,不过驻唱肯定还是不能少的呀.每周五会是一个喜欢唱Jazz的妹子来坐镇.周六和周天是一个复旦大一的男生,喜欢唱民谣.</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/singer1.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;这个妹子唱英文歌的话Jazz风格会多一点,中文歌的话,她会比较喜欢唱王菲,唱蔡健雅,唱王若琳.都是我的菜哈哈哈哈.<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/singer2.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;男生的话就不露脸了…他比较喜欢唱宋冬野,唱老狼,唱马頔,唱李健.属于清吧的标配类型.<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/singer3.jpeg" alt="此处输入图片的描述"></p>
+<h2 id="u6211_u548C_u9152"><a href="#u6211_u548C_u9152" class="headerlink" title="我和酒"></a>我和酒</h2><p>&#160; &#160; &#160; &#160;店里的首席调酒师调出来的水母<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish1.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish2.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish3.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;我调出来的水母…..</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish4.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;调Cinderella(灰姑娘),摇壶摇起来才有调酒师的感觉.</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish5.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish6.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish7.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;其实按道理讲我是不应该在Cinderella里面加红石榴糖浆的,不过调出来还是蛮好看的哈哈哈哈哈.</p>
+<h2 id="u5E7F_u544A_u65F6_u95F4"><a href="#u5E7F_u544A_u65F6_u95F4" class="headerlink" title="广告时间"></a>广告时间</h2><p>&#160; &#160; &#160; &#160;下面这些图是酒吧的内景:</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish8.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish9.jpeg" alt="此处输入图片的描述"></p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/jellyfish10.jpeg" alt="此处输入图片的描述"></p>
+<p>&#160; &#160; &#160; &#160;酒吧就坐落在杨浦区大学路33号楼202室.喜欢喝酒听歌的朋友欢迎周末来玩~</p>
+<hr>
+<p>&#160; &#160; &#160; &#160;之前请几个朋友到店里坐过,一般都会问我为什么会想去酒吧做义工.小的原因有很多,比如喜欢喝酒喜欢听歌,比如周末比较空比如想多见些人多交些有意思的朋友,再比如有妹子觉得我当程序员会变得太闷劝我转行…概括起来说的话,我就是这么个闲不住又对生活比较有激情的人,希望自己的人生能经历更多,我的确很喜欢写代码,但是程序员也只是我的一份很喜欢的工作,而不能定义我生活的全部.现在我是一个职业程序员,业余调酒师,不知道明年我又会给自己打上什么样的标签.我很期待.</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/调酒师/" rel="tag">#调酒师</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/30/踩坑记-系列-Guava-Lists-transform/" rel="next" title="<<踩坑记>>系列--Guava Lists.transform">
+                <i class="fa fa-chevron-left"></i> <<踩坑记>>系列--Guava Lists.transform
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/03/踩坑记-系列-用Jackson解决子类序列化后-反序列化成父类的异常/" rel="prev" title="<<踩坑记>>系列--用Jackson解决子类序列化后,反序列化成父类的异常">
+                <<踩坑记>>系列--用Jackson解决子类序列化后,反序列化成父类的异常 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/31/一个写代码的调酒师/"
+           data-title="一个写代码的调酒师" data-url="http://codingwater.org/2016/01/31/一个写代码的调酒师/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xsrzn.com1.z0.glb.clouddn.com/avatarfb.jpg" alt="Kaixian.Dai" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Kaixian.Dai</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">职业程序员，业余调酒师</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">categories</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://blog.log4d.com/" target="_blank">一个酷爱大保健的男人</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://chenzhe.me/" target="_blank">初中同学,擅长企业内部IT项目</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://sixis.me/" target="_blank">She</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5E97_u957F"><span class="nav-number">1.</span> <span class="nav-text">店长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u8001_u677F_u5A18"><span class="nav-number">2.</span> <span class="nav-text">老板娘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u9A7B_u5531"><span class="nav-number">3.</span> <span class="nav-text">驻唱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6211_u548C_u9152"><span class="nav-number">4.</span> <span class="nav-text">我和酒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5E7F_u544A_u65F6_u95F4"><span class="nav-number">5.</span> <span class="nav-text">广告时间</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kaixian.Dai</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"codingwater"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config(null);
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>

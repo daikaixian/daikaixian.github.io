@@ -1,0 +1,789 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="项目管理," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Water's Life" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="经过了近两个月的忙碌，上周五顺利的发布了公司内部的一个CRM系统。就技术而已，项目本身没多大难度。但是，作为我踏入职场之后的第一次Project Management, 还是给我带来了很多新鲜的体验和不同的思考。所以，很值得来一次复盘。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一粒略有成效的Management">
+<meta property="og:url" content="http://codingwater.org/2017/01/09/一粒略有成效的Management/index.html">
+<meta property="og:site_name" content="Water's Life">
+<meta property="og:description" content="经过了近两个月的忙碌，上周五顺利的发布了公司内部的一个CRM系统。就技术而已，项目本身没多大难度。但是，作为我踏入职场之后的第一次Project Management, 还是给我带来了很多新鲜的体验和不同的思考。所以，很值得来一次复盘。">
+<meta property="og:image" content="http://static5.depositphotos.com/1009659/496/i/450/depositphotos_4967133-stock-photo-crossword.jpg">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/ptm21.png?">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/crm2.png">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/calender.png">
+<meta property="og:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4094419724,3943831855&fm=23&gp=0.jpg">
+<meta property="og:updated_time" content="2017-01-09T07:17:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一粒略有成效的Management">
+<meta name="twitter:description" content="经过了近两个月的忙碌，上周五顺利的发布了公司内部的一个CRM系统。就技术而已，项目本身没多大难度。但是，作为我踏入职场之后的第一次Project Management, 还是给我带来了很多新鲜的体验和不同的思考。所以，很值得来一次复盘。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 一粒略有成效的Management | Water's Life </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Water's Life</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                一粒略有成效的Management
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Posted on
+            <time itemprop="dateCreated" datetime="2017-01-09T12:55:59+08:00" content="2017-01-09">
+              2017-01-09
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; In
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工作/" itemprop="url" rel="index">
+                    <span itemprop="name">工作</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/01/09/一粒略有成效的Management/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/09/一粒略有成效的Management/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>经过了近两个月的忙碌，上周五顺利的发布了公司内部的一个CRM系统。就技术而已，项目本身没多大难度。但是，作为我踏入职场之后的第一次Project Management, 还是给我带来了很多新鲜的体验和不同的思考。所以，很值得来一次复盘。</p>
+<p><img src="http://static5.depositphotos.com/1009659/496/i/450/depositphotos_4967133-stock-photo-crossword.jpg" alt="management"></p>
+<a id="more"></a>
+<h2 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h2><p>这个CRM系统在公司的技术团队组建完善之前，就需要使用，所以当时在比较急的情况下选择了外包购买的方式。后来因为多方面的原因，比如外包产品不是定制化的，不那么好用，以及该系统产出物的目标客户的特殊性等，公司决定自行开发一个此CRM系统的替代品。而在我接手这个活之前，是有一个小项目组在做的，而且据说已经做了3~4个月。这个项目组的配置是3个后端，2个前端，技术经理是一个后端开发，大概3年以上工作经验，其他人平均工作经验在半年到一年之间吧。</p>
+<p>之所以变成我来写这个项目的review，是因为之前5个人的团队3个多月做出来的半成品，第一次提测的时候被QA认为是几乎无法使用。眼看Deadline还有不到两个月，管理层对于这个状况表示无法容忍。过程的一些细节此处不谈，最后的结果是技术经理和另一个后端开发‘被辞职’。项目组暂时停摆。</p>
+<p>然后有天，CTO找我聊了一下，表示希望我作为牵头人，来接手这个项目。一开始我的内心是拒绝的，因为这种项目在我眼里，是大学生实验室里的一些外包活的水平。然而当时的我手头确实不算很忙，而且这个项目确实比较紧急，不能再拖了。所以尽管内心不是很情愿，也只能安慰自己说是来帮忙救火的。项目重新立项，作为该项目需求方和验收方的产品经理(公司高管之一，同时也是这个项目中我需向其主动汇报的人)老高请大家吃饭时，我的内心甚至有那么一丝对自己前途的忧虑。。。</p>
+<h2 id="u5148_u8C08_u7ED3_u679C"><a href="#u5148_u8C08_u7ED3_u679C" class="headerlink" title="先谈结果"></a>先谈结果</h2><h3 id="u8FDB_u5EA6"><a href="#u8FDB_u5EA6" class="headerlink" title="进度"></a>进度</h3><ul>
+<li>2016.11.14本项目重新立项，到2016.12.23新系统p0(标识优先级)模块上线，再到2017.1.6新系统p1模块发布。至此，新系统可以算是提前交付了。</li>
+</ul>
+<h3 id="u8D28_u91CF"><a href="#u8D28_u91CF" class="headerlink" title="质量"></a>质量</h3><ul>
+<li>QA团队的反应是该项目虽然提测时也有一些bug,但基本都是一些交互上的，不影响核心功能使用的bug,比起公司的主App版本迭代时的bug要少了很多。</li>
+<li>产品经理和目标用户试用后给到的反馈也是比较满意。不仅尽可能完成需求文档上所需要的功能要求，在交互上也做了不少的优化。</li>
+<li>我其实是知道自己埋了一些后面需要去填的坑的。没有选择一开始就填掉也是为了项目进度让步。不过这些坑对于内部系统来说，都是无伤大雅的。</li>
+</ul>
+<h3 id="u56E2_u961F"><a href="#u56E2_u961F" class="headerlink" title="团队"></a>团队</h3><ul>
+<li>团队从之前的五个人，缩减为现在的三个人 – 我作为一个应届毕业生，担任技术经理(或者不那么严格的区分的话，也算项目经理，因为项目进度主要是我在管控)，带领另外两个大概有两到三年工作经验的程序员(一个后端，一个前端)完成任务。刚开始觉得要带工作经验比自己要长的人，心里也会有点没底。然而最后I made it,真心感激老东家@堆糖，老Leader@alswl和@shadow在技术和管理上给我带来的影响。</li>
+</ul>
+<h3 id="u5FC3_u6001"><a href="#u5FC3_u6001" class="headerlink" title="心态"></a>心态</h3><ul>
+<li>除了被队友坑的有那么些不爽之外，整个项目过程我是处于越来越享受的一个状态。这很出乎我的意料之外。</li>
+</ul>
+<h2 id="u518D_u804A_u8FC7_u7A0B"><a href="#u518D_u804A_u8FC7_u7A0B" class="headerlink" title="再聊过程"></a>再聊过程</h2><h3 id="u8981_u4EBA"><a href="#u8981_u4EBA" class="headerlink" title="要人"></a>要人</h3><p>新的团队中的后端开发也是被领导层指定加入的，所以我没有什么选择权。不过领导层没有指定前端，甚至希望我考虑下可不可以不要前端，UI开发的难看一点都没关系。这个问题被我直接拒绝了，不是技能栈没有延伸到那一块，而是出于个人的一些私心。来做这样一个项目无论对我还是另一个后端工程师都已经是对职业发展不那么好的一个选择，面向公司内部的外包项目和面向广大外部用户的移动互联网项目，我不想去进一步比较哪一个对于个人的发展更有利一些。更何况我已经坚定的将自己定位为后端工程师，花很多时间去写一些低质量的前端代码，与职业发展相悖，这一点当然不能轻易接受。我承认这确实出于私心，但是在公司有相关资源可用以及能保证项目进度的情况下，员工高度重视自己的个人成长，在长期看来也许是一件更有利于企业自身的事情。</p>
+<p>总而言之，在我的坚持下，新团队有了前端资源。经过分析后，我向前端Leader开口要人了。因为之前跟前端的几个开发合作的不多，但对其总体水平略知一二，所以要人的时候比较谨慎。特地请前端Leader给一个效率相对较高的人，并希望后期其他项目的活尽量不要派给他，因为这个项目需要赶进度。最后前端Leader经过考虑，给了个确实相对之前的前端团队来说效率较高的人。但是在后面的合作中，依然一次次激起我内心数万头草泥马的奔腾。</p>
+<h3 id="CodeStyle__26amp_3B__u5355_u5143_u6D4B_u8BD5"><a href="#CodeStyle__26amp_3B__u5355_u5143_u6D4B_u8BD5" class="headerlink" title="CodeStyle &amp; 单元测试"></a>CodeStyle &amp; 单元测试</h3><p>对于前面的团队留下来的源码，不懂代码的产品经理都建议我说：‘你们推倒重来吧‘。开始我还没有那么想这样做，但是当我看到源码中各种以大驼峰的方式命名的Method，各种以拼音首字母的缩写的命名的字段，以及连.gitignore文件都没有添加的repo时，我就知道我该干嘛了，当然我是先吐了一口老血。</p>
+<p>考虑到代码中可能有一些业务的说明注释，我还是选择了在原有代码仓库上做修改。于是在下周一就要开工写代码之前，周天自己跑到公司加了一天班。在项目的gradle build流程中增加了CodeStyle Check和UnitTest的强制执行.并在后续的开发中与同事约定，每次push到dev分支之前，请在本地保证Build是Success的。可以不用追求覆盖率，可以不用使用h2之类的内存数据库，但是请务必保证代码风格check和单元测试的正常。而且尽量增强自己写的单测的健壮性，不要因为其他人随便修改了点数据库的数据，自己的单测就挂掉了。</p>
+<p>当然，这里提到的单测其实已经不是严格意义上的单元测试了，而有点像集成测试。还有上面提到的，不强制追求单测覆盖率，其实也是一个潜在的问题。因为项目进度本身就比较赶，根本没时间做CodeReview，那么如果开发一个单测都不写，其实也是可以Build Successful的。但其实每个开发还是有一些良知和敬畏的，不会刻意去钻这样的漏洞。所以这个看起来漏洞百出的build规约，在我们这个项目的实施过程中，还是很顺利的。如果团队更大一些，肯帝是要制定相对完善的机制和付出一定的成本来保证代码持续集成的质量，比如引入h2内存数据库，比如定一个必须满足的单测覆盖率等等。</p>
+<p>下面是我司主App的一个版本迭代项目和本项目提测后，被QA验证出来的bug数量分析图。</p>
+<ul>
+<li>主APP版本迭代项目</li>
+</ul>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/ptm21.png?" alt="2.1"></p>
+<ul>
+<li>本项目</li>
+</ul>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/crm2.png" alt="crm2.0"></p>
+<p>两个项目中，前端(特指h5)跟客户端的构建流程都没有强制验证单测，而只有本项目的后端代码的构件流程中强制验证了单测。</p>
+<p>两个项目的业务和架构形态不完全相同，所以上面的对比并不能说明全部的问题。然而bug数量如此悬殊的差距，我认为单元测试在其中还是起到了非常重要的作用。</p>
+<h3 id="u6D4B_u8BD5_u73AF_u5883_u6784_u5EFA_u81EA_u52A8_u5316"><a href="#u6D4B_u8BD5_u73AF_u5883_u6784_u5EFA_u81EA_u52A8_u5316" class="headerlink" title="测试环境构建自动化"></a>测试环境构建自动化</h3><p>现在技术团队持续集成用的Jenkins服务，无论android,ios,h5还是backend,都是我一手搭建起来的.与同事约定好git work flow之后，设定好Jenkins的job，就能达到每次push dev分支代码即可自动重启测试环境并更新代码的效果。如果单测失败导致build failed了，那么测试环境也就挂了，问题暴露也就越发的快。这样的模式，对于我们这样的小Team来说，确实很爽，很高效。</p>
+<p>说到快速发现问题，又想聊下日志该怎么打的问题。我本以为不管怎样，根据不同的业务把日志打到不同的文件中是很基础的事情。但是现在APP团队的那些后台项目，所有的日志全打在一个文件里面…每次线上出问题了要查找关键日志，都很低效，还经常出现找不到错误日志的情况，其实不是真的没有，而是太难找。跟一些开发反馈过这个问题，但是得到的回复是不知道该怎么按业务清晰的划分，以及不是可以用logger的Class和级别去一行行匹配查找吗？。。。。我现在想说，即使按业务划分的粒度非常大，也能轻轻松松的把一个有业务功能的系统分成个四五个子模块吧。如果能分工打出四五份不同模块的日志，线上定位问题起来也要方便和快速的多了吧。</p>
+<h3 id="u7EC6_u7C92_u5EA6_u5DE5_u4F5C_u91CF_u4F30_u7B97__26amp_3B__u6BCF_u65E5_u7AD9_u4F1A"><a href="#u7EC6_u7C92_u5EA6_u5DE5_u4F5C_u91CF_u4F30_u7B97__26amp_3B__u6BCF_u65E5_u7AD9_u4F1A" class="headerlink" title="细粒度工作量估算 &amp; 每日站会"></a>细粒度工作量估算 &amp; 每日站会</h3><p>聊完技术上的管理，接下来主要聊聊流程上的管理。</p>
+<ul>
+<li>需求确定之后，我先是给需求划分了一个优先级，分为p0,p1和p2。其中p0和p1上线之后就可以交付给用户们投入使用了，p2是一些诸如管理员管理系统用户账号创建之类的功能，即使不写代码，也能通过其他方式暂时满足需求。</li>
+<li>确定优先级之后，与需求方确认每个版本上线的deadline.并让各位开发对当前阶段要开发的功能，进行自我工作量评估，最后会写进团队的工作日历(下图是部分安排截图)。确保只要按照项目计划进行，就能如期交付。</li>
+<li>每天下班前开发组站会。每日阐述自己今天的工作内容，并自我评估进度健康状况。如果发现有delay迹象，会要求对应开发尽快做出调整。</li>
+<li>每周五下班前，根据每日站会的统计情况，向需求方反馈项目进度周报。</li>
+</ul>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/calender.png" alt="进度日历"></p>
+<p>这套流程中，我觉得对本项目按期交付帮助最大的就是优先级的划分和每日站会的进度管理方式。优先级划分清楚之后，让我们心头的压力小了不少，只需要集中注意力去做一些用户核心需要的功能需求，那些不那么紧要的需求，我们可以排在最后慢慢去做。从而团队的节奏就会显得从容很多。</p>
+<p>每日站会这个进度管理方式就更是重要了。它能够帮助我很及时的发现团队中有人节奏掉队，不管是什么原因引起的：也许是一整天游手好闲不专心干活，也许是被其他优先级更高的事件占据了时间，也许是碰上了技术山的难题卡壳了，或者干脆就是执行效率低下等等。我只需要每天拉上开发，花5分钟左右的时间，大家汇报一下工作内容并自我评估一下进度，真的是一个蛮轻松的事。因为有时候，通过口头汇报one by one的方式，落后的人会通过比较很明显的发现自己的进度是落后的。然后脸红，心跳加速等反应就会发生，然后会自己反思该如何把进度补上来等等。我作为项目经理，大多数时候不需要去过多的提醒。但是如果没有这样一个每日反思一下的流程，即使是自我驱动性较强的人，也会出现自己没能及时察觉的进度掉队。毕竟，在没有外力的干扰下，人总是比较容易的原谅和包庇自己。我自认为是一个自驱性比较强的人，然而也曾掉进过这样的人性陷阱里，幸亏是每日站会的制度及时的把我拉了出来。</p>
+<p>另外，有些自律性比较高的同事也曾聊起过对每日站会这种进度的抵触性，认为其将团队气氛弄得过于紧张了等等。我也承认这种问题的存在，我觉得非常优秀的团队也许对于轻松气氛的需求胜过对进度状态监控的需求。然而大多数相对平庸，甚至情势不容乐观的团队(我司的部分技术团队目前应该算在内)，对项目进度的及时掌控和调整，如果做的不好，可能直接关系到生死存亡。。。</p>
+<h3 id="u63A8_u5E7F_u534F_u540C_u5DE5_u5177"><a href="#u63A8_u5E7F_u534F_u540C_u5DE5_u5177" class="headerlink" title="推广协同工具"></a>推广协同工具</h3><p>在本项目开展之前，我曾想推动整个团队去使用一些类似Trello, Tower，TeamBition之类的Get Things Done的团队协作工具。但是因为一说要花钱，就没太多后文了，所以一直没能成行。这次可以自己主导项目的节奏，于是要求小团队入驻了Tower,前文提到的工作日历，每日站会等都是在Tower上进行的。还有很多次与产品经理商量一些产品上的细节，我们都是在Tower上讨论并归档的。因用QQ讨论显得有效力不够，用邮件讨论觉得稍微重了点，而且两个人之间的讨论后面想让其他人看到，还得再转发，以及在内容的编写格式上受到的限制等等。而且这种工具对责任田的划分，任务完成时间的管理等都是有比较好的帮助的。</p>
+<p>值得欣慰的是，产品经理在慢慢的使用过程中，向我表示过对引入这种好用工具的赞赏。最近跟CTO聊的时候，贴了个链接给他，他也表示希望能在后续推动这种协同工具在团队中的使用。</p>
+<h3 id="u5353_u6709_u6210_u6548_u7684_u7BA1_u7406"><a href="#u5353_u6709_u6210_u6548_u7684_u7BA1_u7406" class="headerlink" title="卓有成效的管理"></a>卓有成效的管理</h3><p>在项目进行的同时，我拜读了Peter F. Drucker的经典作品《卓有成效的管理》。这是我到目前为止在kindle上看书做标记做的最多的一本。原因很简单，因为有很多观点直接戳中我所面临的问题。比如用人只需关注其长处，并利用好这个特质，让其发挥尽可能多的作用，而不用过多的关注此人的短处，更不能让其去承担太多于他而言有风险的任务。这种一边实践，一边通过看书来review自己的实践效果的方式，我会觉得受益很多。上次有这样的体验是在做一个重构性质的项目时，同步阅读了Martin Fowler的《重构:改善既有代码的设计》一书，同样印象深刻受益良多。</p>
+<h2 id="u4E0D_u5410_u69FD_u4F1A_u618B_u6B7B"><a href="#u4E0D_u5410_u69FD_u4F1A_u618B_u6B7B" class="headerlink" title="不吐槽会憋死"></a>不吐槽会憋死</h2><p>我决定还是控制下情绪。不多说了。</p>
+<!--
+整体上而言，此次项目经历我觉得受益还是很多的，做的过程中也比较开心。但是前文也提到，还是有被队友坑到内心‘万马奔腾’的时候。比如有某队友让TA切条dev分支push一下，TA在座位上犹豫了半天，突然端起电脑跑回去找自己的Leader求助。。。再比如项目刚开始的时候，我因为有事要请假，让一队友A帮忙整理一下以前的团队遗留下来的系统进度，队友A可能统计的没有很精确，有一些工作前端的同事做了，不过没跟后端联调，A将其标记为了未完成。后来我请完假回来和A在讨论一些业务细节的时候，另一位队友B端着电脑一脸怒气的冲过来，往桌子上一放，说：‘我们前端之前明明做了，只是没联调，你们说没做是什么意思’。我当时想打个圆场说，这是A帮我统计的，也不一定是准确的，我们现在正在商量点重要的需求，待会再聊这个可以吗。B队友真的是不依不饶呀，好像非要给自己的前端阵营出口气，还是非要给我来个下马威还是什么的。不停的指指点点好像非要给个说法，我特么也是不爽了，声音一提：“那你现在冲过来是想得个什么结果？”。结果也就软了，说什么只是想说不是没做，只是没联调。呵呵。再比如三个人的Team ,两个人每天9点钟左右就差不多到了，开始工作了，另一个几乎每天10点半以后才到。要说住得远也没什么好过分追究的，可是每天10点半到了之后，在那边和这个唠唠嗑和那个搭搭话，显得自己多会交际还是什么的。就快到11点了，然后了，12点出去吃午饭啊！然后回来了还要和其他同事再疯一疯聊一聊，我跟另一个队友都午休醒了，TA开始午休了。最后到晚上，三个人中最早走的几乎也总是TA。更气人的是团队等着提测了，就等TA的bug修完的时候，TA反倒是最不着急的，一会这里窜窜，一会和那边聊天的人搭搭话。搞得我心里真的窝火。等到好不容易提测了，我跟一个队友都在很积极的和QA一起找bug,某队友就像已经交货了是的，只等着别人主动给TA提就好了，不会自己去查自己的bug.可是往往都是该队友的隐秘bug被最后发现，影响交付的时间。如果说以上这些我可以再忍一忍的话，那预发布的时候，注意是在预发布的时候，某队友一声不吭从办公室消失，整整四个多小时，更关键的是预发布环境上一堆全是TA的bug等着修。呵呵呵。QQ问TA哪去了也不回。我特么当时真的是‘万马奔腾’。等晚上6点多回来了，7点多又收拾东西回家了。我去你这个算是翘班了吧，说好的一天八小时了？
+还创业了，朋友？
+
+如果我以上说的那么多个某队友的奇葩事，其实是同一个人，你是不是也。。。好吧，当我没说。
+
+-->
+<h2 id="u6211_u5BF9_u7BA1_u7406_u7684_u8BA4_u77E5"><a href="#u6211_u5BF9_u7BA1_u7406_u7684_u8BA4_u77E5" class="headerlink" title="我对管理的认知"></a>我对管理的认知</h2><p>说了很多，但本文的核心关键词是‘管理’。这里我也不将论点延伸到个人管理什么的了，就谈职场上的团队管理。我认为，作为一个技术人员，个人的潜心修炼，日复一日的沉淀积累，也许可以让自己为企业输出的价值保持在30%到50%的年增长率，这个状态在刚参加工作时也许可以持续好几年，但增长率通常会越来越低，甚至会随着时间的迁移，出现负增长的现象。然而如果他能知人善用，能运用好「团队管理」这项“可怕”的技能，那么他的输出价值增长率也许能达到300%，500%，或者1000%，甚至更多。</p>
+<p>但是，想要带领技术团队产出相比于自身500%以上价值的Manager,不经过好几年的潜心修炼和沉淀积累，那么他能领导和管理的人，也许会有一个很低的天花板，然后他的Team所能创造的价值，也会有一个很明显的天花板。</p>
+<p>不过，我也不认为Team Leader只能管理比自己弱的人，毕竟「用师者王」。如何「用师」，是管理的高级艺术，此处不敢妄谈。。</p>
+<hr>
+<p>路漫漫兮其修远。</p>
+<p><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4094419724,3943831855&amp;fm=23&amp;gp=0.jpg" alt="road"></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/项目管理/" rel="tag">#项目管理</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/08/也聊Jenkins/" rel="next" title="也聊Jenkins">
+                <i class="fa fa-chevron-left"></i> 也聊Jenkins
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/01/09/一粒略有成效的Management/"
+           data-title="一粒略有成效的Management" data-url="http://codingwater.org/2017/01/09/一粒略有成效的Management/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xsrzn.com1.z0.glb.clouddn.com/avatarfb.jpg" alt="Kaixian.Dai" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Kaixian.Dai</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">职业程序员，业余调酒师</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">categories</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://blog.log4d.com/" target="_blank">一个酷爱大保健的男人</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://chenzhe.me/" target="_blank">初中同学,擅长企业内部IT项目</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://sixis.me/" target="_blank">She</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u80CC_u666F"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5148_u8C08_u7ED3_u679C"><span class="nav-number">2.</span> <span class="nav-text">先谈结果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8FDB_u5EA6"><span class="nav-number">2.1.</span> <span class="nav-text">进度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8D28_u91CF"><span class="nav-number">2.2.</span> <span class="nav-text">质量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u56E2_u961F"><span class="nav-number">2.3.</span> <span class="nav-text">团队</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5FC3_u6001"><span class="nav-number">2.4.</span> <span class="nav-text">心态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u518D_u804A_u8FC7_u7A0B"><span class="nav-number">3.</span> <span class="nav-text">再聊过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8981_u4EBA"><span class="nav-number">3.1.</span> <span class="nav-text">要人</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CodeStyle__26amp_3B__u5355_u5143_u6D4B_u8BD5"><span class="nav-number">3.2.</span> <span class="nav-text">CodeStyle & 单元测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6D4B_u8BD5_u73AF_u5883_u6784_u5EFA_u81EA_u52A8_u5316"><span class="nav-number">3.3.</span> <span class="nav-text">测试环境构建自动化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7EC6_u7C92_u5EA6_u5DE5_u4F5C_u91CF_u4F30_u7B97__26amp_3B__u6BCF_u65E5_u7AD9_u4F1A"><span class="nav-number">3.4.</span> <span class="nav-text">细粒度工作量估算 & 每日站会</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u63A8_u5E7F_u534F_u540C_u5DE5_u5177"><span class="nav-number">3.5.</span> <span class="nav-text">推广协同工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5353_u6709_u6210_u6548_u7684_u7BA1_u7406"><span class="nav-number">3.6.</span> <span class="nav-text">卓有成效的管理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E0D_u5410_u69FD_u4F1A_u618B_u6B7B"><span class="nav-number">4.</span> <span class="nav-text">不吐槽会憋死</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6211_u5BF9_u7BA1_u7406_u7684_u8BA4_u77E5"><span class="nav-number">5.</span> <span class="nav-text">我对管理的认知</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kaixian.Dai</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"codingwater"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config(null);
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Kubernetes," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Water's Life" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="又是一个月没有更新博客了，白白的烧了62块钱的服务器租赁费。倒不是不想更新，实在是因为正在解决一个颗粒度很大的技术问题。已经断断续续被这个问题折磨了快两个月的时间，昨天晚上终于取得了阶段性成果，所以赶紧来post一篇。希望今天能早点下班，毕竟七夕。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Kubernetes改造米喜部署环境--阶段性总结">
+<meta property="og:url" content="http://codingwater.org/2016/08/09/使用Kubernetes改造米喜部署环境-阶段性总结/index.html">
+<meta property="og:site_name" content="Water's Life">
+<meta property="og:description" content="又是一个月没有更新博客了，白白的烧了62块钱的服务器租赁费。倒不是不想更新，实在是因为正在解决一个颗粒度很大的技术问题。已经断断续续被这个问题折磨了快两个月的时间，昨天晚上终于取得了阶段性成果，所以赶紧来post一篇。希望今天能早点下班，毕竟七夕。">
+<meta property="og:image" content="http://img.xiazaizhijia.com/uploads/2016/0808/20160808105639891.png">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/fuck8s.jpg-large">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/k8smesos.jpg-large">
+<meta property="og:image" content="http://img4.imgtn.bdimg.com/it/u=1326576917,4008009621&fm=21&gp=0.jpg">
+<meta property="og:image" content="http://img2.imgtn.bdimg.com/it/u=533468645,120501819&fm=21&gp=0.jpg">
+<meta property="og:updated_time" content="2016-08-10T07:54:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用Kubernetes改造米喜部署环境--阶段性总结">
+<meta name="twitter:description" content="又是一个月没有更新博客了，白白的烧了62块钱的服务器租赁费。倒不是不想更新，实在是因为正在解决一个颗粒度很大的技术问题。已经断断续续被这个问题折磨了快两个月的时间，昨天晚上终于取得了阶段性成果，所以赶紧来post一篇。希望今天能早点下班，毕竟七夕。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 使用Kubernetes改造米喜部署环境--阶段性总结 | Water's Life </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Water's Life</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                使用Kubernetes改造米喜部署环境--阶段性总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Posted on
+            <time itemprop="dateCreated" datetime="2016-08-09T09:07:31+08:00" content="2016-08-09">
+              2016-08-09
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; In
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/DevOps/" itemprop="url" rel="index">
+                    <span itemprop="name">DevOps</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/09/使用Kubernetes改造米喜部署环境-阶段性总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/09/使用Kubernetes改造米喜部署环境-阶段性总结/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>又是一个月没有更新博客了，白白的烧了62块钱的服务器租赁费。倒不是不想更新，实在是因为正在解决一个颗粒度很大的技术问题。已经断断续续被这个问题折磨了快两个月的时间，昨天晚上终于取得了阶段性成果，所以赶紧来post一篇。希望今天能早点下班，毕竟七夕。</p>
+<p><img src="http://img.xiazaizhijia.com/uploads/2016/0808/20160808105639891.png" alt="七夕之歌"></p>
+<a id="more"></a>
+<h2 id="u73B0_u72B6_u4E0E_u76EE_u6807"><a href="#u73B0_u72B6_u4E0E_u76EE_u6807" class="headerlink" title="现状与目标"></a>现状与目标</h2><p>公司目前项目的开发和测试是在内网的物理机上进行的。体量暂时也还不大，所以预发和生产环境挂在阿里云上。Leader结合公司未来的业务发展需求和目前行业的大趋势（比如Docker,DevOps,MicroService等等），跟我定了这么个任务。希望能在2.0项目上线之前，对预发环境的部署方式进行改造，主要就是使用容器技术将应用容器化，并使用编排工具将这些应用管理起来。</p>
+<p>容器技术Docker已经是如雷贯耳，几乎成为容器技术的代名词。所以其实没什么好犹豫的，不过值得一提的是CoreOS推动的一款类Docker的开源容器引擎技术，Rocket.CoreOS这样做的原因是因为他们认为Docker已经背弃了提供“一个标准的容器架构”的初衷.但是就我的需求，务实的选择，当然是Docker.</p>
+<p>至于Orchestration Tool.,经过详细的技术选型和调研，最终在Docker Swarm、Apache Mesos和Google Kubernetes之间选择了Kubernetes,作为编排工具来管理Docker.</p>
+<h2 id="u8270_u96BE_u7684_u5B9E_u65BD_u8FC7_u7A0B"><a href="#u8270_u96BE_u7684_u5B9E_u65BD_u8FC7_u7A0B" class="headerlink" title="艰难的实施过程"></a>艰难的实施过程</h2><p>首先我其实是一个开发,一个Dev.但是整个实施过程中，涉及到写代码的工作其实是非常之少的，大多数的工作集中在软件的安装，环境的配置，还有镜像的下载。。。。是的，说起这个镜像的下载我就坐不住，有些镜像翻个墙下载，几MB十几MB还行，有些动不动就是几十MB几百MB，一等就是快一个小时。能下到的也就算了，有些镜像放在gcr.io下面，根本拉不动。没有镜像，所有的操作都会被卡住，心情就是操蛋。好在后面学会了用DaoCloud和时速云之类的东西，总算是逃脱了GFW的拦截。</p>
+<p>总结起来就是，我认为这个工作让运维同学来做可能更合适且高效。但是都在讲DevOps，所以也没什么好抱怨的了，就当是扩充技能栈了。</p>
+<p>这里罗列一下在实施过程中踩过的坑和做过的事，帮助理清思路：</p>
+<ul>
+<li><p>去机房给物理机安装操作系统，配置网络，连接交换机。CentOS上有一个设置网络的GUI工具:nmtui,可以帮很多忙.另外本来打算去划分vlan的，但是电脑连交换机的console口使用超级终端有点问题，所以那天就没有划分，但是两台服务器还是可以通过内网ip互相ssh的。</p>
+</li>
+<li><p>使用grale 将一个spring boot应用打包Docker Image.<a href="https://spring.io/guides/gs/spring-boot-docker/" target="_blank" rel="external">详情请戳这里，亲测好用</a></p>
+</li>
+<li><p>为了在centos上使用minikube,需要先<a href="http://tecadmin.net/install-oracle-virtualbox-on-centos-redhat-and-fedora/" target="_blank" rel="external">安装VirtualBox</a>,也是个麻烦的过程。踩了yum  update  linux kernel的一些坑</p>
+</li>
+<li><p>一开始在mac本上尝试着跑docker，所以用过docker-machine.后来在centos碰到’Cannot connect to the Docker daemon. Is the docker daemon running on this host?‘的问题的时候，以为在centos上也要安装这个docker-machine.其实只是因为我的docker service挂掉了，service docker restart一下就能解决问题。</p>
+</li>
+<li><p>docker官网上教我在centos上安装docker-engine.后来k8s官网教我在centos上安装k8s的时候用’yum install kubernetes’,结果报告docker版本冲突。十分困惑不解。后经朋友指导和对docker了解更多之后，才知道docker-engine和docker-machine都是docker项目的分支功能，centos安装docker请认准’yum install docker’</p>
+</li>
+<li><p>因为下载镜像超级慢，所以尝试搭建自己的仓库。尝试过<a href="https://docs.docker.com/docker-trusted-registry/" target="_blank" rel="external">DTR</a>和<a href="https://docs.docker.com/registry/deploying/" target="_blank" rel="external">Registry Server</a>,前者直接失败，后者废了九牛二虎之力终于可以在内网各节点间不使用证书访问了，结果后面因为重装了好几次docker,宣告白弄了。。。。现在的状态依然是没有使用仓库，但想一想后面肯定还是要弄起来的。</p>
+</li>
+<li><p>terminal下载东西要翻墙的话，挂个http_proxy是个不错的选择。</p>
+</li>
+<li><p>下载镜像如果嫌太慢或者根本拉不动，可以走DaoCloud或者时速云，拉下来之后重新tag一下，就可以使用了。</p>
+</li>
+<li><p>看过好几个在centos上不靠谱的教你如何搭建k8s集群的文章，找到<a href="http://severalnines.com/blog/installing-kubernetes-cluster-minions-centos7-manage-pods-services" target="_blank" rel="external">这篇十分靠谱的</a>。因为前前后后在不同机器上重新安装过好多次，所以可以说是屡试不爽。</p>
+</li>
+<li><p>有一次在一组新的机器上搭建k8s集群，搭建好之后在master上执行‘kubectl get nodes’ 没有任何的return信息。经排查发现是因为之前在这台机器上跑过minikube,把kube-context设置为了minikube,所以在minikube这个上下文信息下get不到node是很正常的。但是也不知道新安装的集群的context是什么，不知道如何切换回来。有一种做法是删除~/.kube/config文件。</p>
+</li>
+<li><p>因为缺乏经验，在将要上线运行的服务器上胡乱的修改了很多配置文件。导致一下软件的基本使用都有问题。比如在使用docker的过程中就碰到诸如’unit docker.socket not found ‘，’bad<br>certificate’之类的问题。google了半天也没有很好的解决，于是说想办法重装吧。但是一个不合格的运维起初以为只需要 ‘yum  remove<br>xxx’就可以完成卸载了。其实并没有，这样的卸载很不干净！于是我想了个粗暴的方法，在根目录下使用find命令，递归去查询所有跟‘docker’有关的文件，确认之后全部删掉再重装，就fix了。当然如果一些配置写进了文件，比如/etc/profile之类的，而且后面又忘记了，就只能随缘了。。。把这个烦恼跟一个做运维的朋友反映过之后，他建议我以后不要在生产服务器上乱尝试，而是找那些不重要的机器，比如阿里云按需付费的云主机，把流程测试通过了，再搬到生产服务器上去，或者预先使用虚拟化的方式对一台主机进行一虚多。拿虚拟机做尝试，发现玩坏了，直接废弃掉，重装一台虚拟机。</p>
+</li>
+<li><p>至于k8s官网上的文档，不得不说写的实在差。跟着文档走，到处走不通的体验实在是糟糕透了，简直是要把我弄疯掉。我自身的原因当然也有一些，但是一个hello-world我真的是从第一次看到到顺利跑完居然中间隔了一个月还多。。。下面这张图应该可以表达众多使用者对k8s官方文档共同的心声吧。</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/fuck8s.jpg-large" alt="论K8s官网的文档写的有多烂"></p>
+</li>
+<li><p>当被k8s官网文档折磨的死去活来的时候，花了一天的时间把Docker Swarm和Apache Mesos的入门文档都跑了一遍，不要太顺畅。跑完之后做了一个更感性的对比。<br><img src="http://7xsrzn.com1.z0.glb.clouddn.com/k8smesos.jpg-large" alt="对比Mesos,k8s,Swarm"></p>
+</li>
+<li><p>还有一些方法论性质的感悟。比如这次施工，学习资料基本全英文。感谢自己今年4，5月份在学校养成了好习惯，阅读英文文档除了慢了点，没有什么太大的问题。另外在碰到问题的时候，除了stackoverflow，github的issues讨论列表也是一个可以解决问题的地方。不过更多的是讨论过程，正解命中率相对较低。说到stackoverflow,小小的开心了一下的是首答换来了2个赞同，reputation值终于超过了15，可以给别人的答案点赞了。好爽。</p>
+</li>
+<li><p>说到方法论，Leader给我灌输的‘谋定而后动’应该也要算一个。百度脑图是一个不错的分析工具，帮助理清思路。想清楚了再动手。</p>
+</li>
+<li><p>刚刚说到在google里面找答案。突然又记起来另一个非常非常重要的东西。那就是–日志！日志！日志！回顾这不长的‘运维工作经历’，觉得跟开发最相通的地方就在于发现不对劲了，找日志，然后拿日志中的错误信息当keyword去google.但是linux系统记录日志的方式和我们平时常见的应用系统又有一些差别，碰到异常情况但是找不到具体日志，是我在施工过程中最痛苦的经历之一。要了解linux的脾气，可能还是要用时间来磨炼吧。</p>
+</li>
+</ul>
+<h2 id="u4FEE_u6574_u4E00_u4E0B_u518D_u7EE7_u7EED"><a href="#u4FEE_u6574_u4E00_u4E0B_u518D_u7EE7_u7EED" class="headerlink" title="修整一下再继续"></a>修整一下再继续</h2><p>  还有一些零碎的事情，一下子可能想不全了，所以就先吐槽这么多。而且这也才完成阶段性的目标，即将公司的主应用docker化并用k8s集群管理起来。后面还要做的事可多了：</p>
+<ul>
+<li>数据库docker化</li>
+<li>集群组建方式调优</li>
+<li>k8s正式上线，测试，预发，生产环境部署方式。实现CI,CD.</li>
+<li>实践微服务架构</li>
+<li>……</li>
+</ul>
+<p>要学的东西就更多了。不过先继续深入理解Docker和K8s应该是首当其冲的工作。</p>
+<p><img src="http://img4.imgtn.bdimg.com/it/u=1326576917,4008009621&amp;fm=21&amp;gp=0.jpg" alt="Docker"></p>
+<p><img src="http://img2.imgtn.bdimg.com/it/u=533468645,120501819&amp;fm=21&amp;gp=0.jpg" alt="K8s"></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Kubernetes/" rel="tag">#Kubernetes</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/03/Mac茶话会/" rel="next" title="Mac茶话会">
+                <i class="fa fa-chevron-left"></i> Mac茶话会
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/18/Kubernetes集群性能监控-Heapster/" rel="prev" title="Kubernetes集群性能监控--Heapster">
+                Kubernetes集群性能监控--Heapster <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/09/使用Kubernetes改造米喜部署环境-阶段性总结/"
+           data-title="使用Kubernetes改造米喜部署环境--阶段性总结" data-url="http://codingwater.org/2016/08/09/使用Kubernetes改造米喜部署环境-阶段性总结/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xsrzn.com1.z0.glb.clouddn.com/avatarfb.jpg" alt="Kaixian.Dai" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Kaixian.Dai</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">职业程序员，业余调酒师</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">categories</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://blog.log4d.com/" target="_blank">一个酷爱大保健的男人</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://chenzhe.me/" target="_blank">初中同学,擅长企业内部IT项目</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://sixis.me/" target="_blank">She</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u73B0_u72B6_u4E0E_u76EE_u6807"><span class="nav-number">1.</span> <span class="nav-text">现状与目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u8270_u96BE_u7684_u5B9E_u65BD_u8FC7_u7A0B"><span class="nav-number">2.</span> <span class="nav-text">艰难的实施过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6574_u4E00_u4E0B_u518D_u7EE7_u7EED"><span class="nav-number">3.</span> <span class="nav-text">修整一下再继续</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kaixian.Dai</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"codingwater"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config(null);
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
