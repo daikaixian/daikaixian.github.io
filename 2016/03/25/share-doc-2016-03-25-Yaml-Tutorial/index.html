@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="时间复杂度,算法," />
+  <meta name="keywords" content="Water's Life" />
 
 
 
@@ -53,17 +53,26 @@
 
 
 
-<meta name="description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;因为Hexo对数学公式的显示支持的不是很人性化，所以原文请戳这里">
+<meta name="description" content="最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。
+
+Definition&amp;#160; &amp;#160; &amp;#160; &amp;#160;YAML Ain’t Markup Language （Yaml不是标记语言，递归否定，可能是借鉴GNU的梗）
+What It Is&amp;#160; &amp;#160;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="夯实基础 -- 算法的时间复杂度">
-<meta property="og:url" content="http://codingwater.org/2016/03/06/夯实基础-算法的时间复杂度/index.html">
+<meta property="og:title" content="Yaml Tutorial">
+<meta property="og:url" content="http://codingwater.org/2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/index.html">
 <meta property="og:site_name" content="Water's Life">
-<meta property="og:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;因为Hexo对数学公式的显示支持的不是很人性化，所以原文请戳这里">
-<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/zoro.jpeg">
-<meta property="og:updated_time" content="2016-06-08T08:15:56.000Z">
+<meta property="og:description" content="最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。
+
+Definition&amp;#160; &amp;#160; &amp;#160; &amp;#160;YAML Ain’t Markup Language （Yaml不是标记语言，递归否定，可能是借鉴GNU的梗）
+What It Is&amp;#160; &amp;#160;">
+<meta property="og:image" content="http://7xsrzn.com1.z0.glb.clouddn.com/yaml2.png">
+<meta property="og:updated_time" content="2016-10-12T03:06:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="夯实基础 -- 算法的时间复杂度">
-<meta name="twitter:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;因为Hexo对数学公式的显示支持的不是很人性化，所以原文请戳这里">
+<meta name="twitter:title" content="Yaml Tutorial">
+<meta name="twitter:description" content="最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。
+
+Definition&amp;#160; &amp;#160; &amp;#160; &amp;#160;YAML Ain’t Markup Language （Yaml不是标记语言，递归否定，可能是借鉴GNU的梗）
+What It Is&amp;#160; &amp;#160;">
 
 
 
@@ -75,7 +84,7 @@
   };
 </script>
 
-  <title> 夯实基础 -- 算法的时间复杂度 | Water's Life </title>
+  <title> Yaml Tutorial | Water's Life </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -215,7 +224,7 @@
             
             
               
-                夯实基础 -- 算法的时间复杂度
+                Yaml Tutorial
               
             
           </h1>
@@ -224,34 +233,19 @@
         <div class="post-meta">
           <span class="post-time">
             Posted on
-            <time itemprop="dateCreated" datetime="2016-03-06T15:12:12+08:00" content="2016-03-06">
-              2016-03-06
+            <time itemprop="dateCreated" datetime="2016-03-25T14:14:49+08:00" content="2016-03-25">
+              2016-03-25
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/夯实基础/" itemprop="url" rel="index">
-                    <span itemprop="name">夯实基础</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/06/夯实基础-算法的时间复杂度/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/06/夯实基础-算法的时间复杂度/" itemprop="commentsCount"></span>
+                <a href="/2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -270,36 +264,86 @@
       
 
       
-        <span itemprop="articleBody"><p>&#160; &#160; &#160; &#160;因为Hexo对数学公式的显示支持的不是很人性化，所以<a href="https://www.zybuluo.com/waterdkx/note/266155" target="_blank" rel="external">原文请戳这里</a></p>
-<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/zoro.jpeg" alt="无奈"><br><a id="more"></a></p>
+        <span itemprop="articleBody"><p>最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。</p>
+<hr>
+<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><p>&#160; &#160; &#160; &#160;YAML Ain’t Markup Language （Yaml不是标记语言，递归否定，可能是借鉴<a href="https://zh.wikipedia.org/wiki/GNU" target="_blank" rel="external">GNU</a>的梗）</p>
+<h2 id="What_It_Is"><a href="#What_It_Is" class="headerlink" title="What It Is"></a>What It Is</h2><p>&#160; &#160; &#160; &#160;YAML is a human friendly data serialization standard for all programming languages.<br>(YAML是一个human friendly的数据序列化标准，适用所有的编程语言)</p>
+<h2 id="Relation_to_JSON"><a href="#Relation_to_JSON" class="headerlink" title="Relation to JSON"></a>Relation to JSON</h2><p>&#160; &#160; &#160; &#160;都是human readable的数据交换格式。但是json对程序更友好，而yaml把human readability的优先级设置得更高。yaml在不同的编程环境中交互的时候需要更复杂的逻辑处理。</p>
+<h2 id="Relation_to_XML"><a href="#Relation_to_XML" class="headerlink" title="Relation to XML"></a>Relation to XML</h2><p>&#160; &#160; &#160; &#160;虽然在很多应用领域两者处于相互竞争的状态，但两者之间并没有任何直接关系。YAML专注于做数据序列化，而XML是为了支持文档的结构化而设计的。</p>
+<h2 id="Grammar"><a href="#Grammar" class="headerlink" title="Grammar"></a>Grammar</h2><ul>
+<li>Structure(结构体)，用空格展示。</li>
+<li>Sequence(数组)， 用“-”来表示。</li>
+<li>Map(键值对)，用“:”分隔。</li>
+</ul>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>&#160; &#160; &#160; &#160;一般YAML文件的扩展名为.yaml,例如下面的文件就是Dijinchao.yaml</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">name: 3D  # K-V</span><br><span class="line">age: 23</span><br><span class="line">work:</span><br><span class="line">    company: duitang  # Structure,空格</span><br><span class="line">    job_title: Develop Engineer</span><br><span class="line">interests:</span><br><span class="line">    - Python  #Sequence 用“-”表示</span><br><span class="line">    - Linux   #Sequence 用“-”表示</span><br><span class="line">    - 大保健   #Sequence 用“-”表示</span><br></pre></td></tr></table></figure>
+<h2 id="YAML_Online_Editor"><a href="#YAML_Online_Editor" class="headerlink" title="YAML Online Editor"></a>YAML Online Editor</h2><ul>
+<li><a href="http://codebeautify.org/yaml-validator" target="_blank" rel="external">http://codebeautify.org/yaml-validator</a></li>
+<li><a href="http://codebeautify.org/yaml-to-json-xml-csv" target="_blank" rel="external">http://codebeautify.org/yaml-to-json-xml-csv</a></li>
+<li><a href="http://www.yamllint.com/" target="_blank" rel="external">http://www.yamllint.com/</a></li>
+</ul>
+<h2 id="PyYaml"><a href="#PyYaml" class="headerlink" title="PyYaml"></a>PyYaml</h2><p>&#160; &#160; &#160; &#160;YAML是一个规范，各个语言都有对这个规范的实现。</p>
+<ul>
+<li>C/C++ <ul>
+<li>libyaml</li>
+<li>yaml-cpp</li>
+</ul>
+</li>
+<li>Java:<ul>
+<li>JYaml</li>
+<li>YamlBeans</li>
+</ul>
+</li>
+<li>Python<ul>
+<li>PyYaml</li>
+<li>PySyck</li>
+</ul>
+</li>
+<li>……</li>
+</ul>
+<p>&#160; &#160; &#160; &#160;还有很多语言的各种实现版本，就不一一列举了。本次采用的pyresttest框架是用Python写的,其中就依赖了PyYaml.所以这里简略的介绍一下PyYaml，目的在于感性的认知pyresttest是如何工作的：</p>
+<p>&#160; &#160; &#160; &#160;首先是<a href="http://pyyaml.org/wiki/PyYAML" target="_blank" rel="external">安装PyYaml</a>,然后执行如下代码：</p>
+<pre><code class="python"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> yaml
+<span class="meta">&gt;&gt;&gt; </span>yaml.load(<span class="string">"""
+name: 3D  # K-V
+age: 23
+work:
+    company: duitang  # Structure,空格
+    job_title: Develop Engineer
+interests:
+    - Python  #Sequence 用“-”表示
+    - Linux   #Sequence 用“-”表示
+    - 大保健   #Sequence 用“-”表示
+"""</span>)
+</code></pre>
+<p>运行结果：</p>
+<p><img src="http://7xsrzn.com1.z0.glb.clouddn.com/yaml2.png" alt="图片"></p>
+<p>&#160; &#160; &#160; &#160;可以看到是yaml.load()拿到了一个python的dict对象，拿到这个对象之后就可以用代码去做各种各样的逻辑处理了.所以测试这边只需要保证.yaml格式的文本文件书写正确，就能利用框架去做逻辑验证，完成自动化测试的需求。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="http://www.ibm.com/developerworks/cn/xml/x-cn-yamlintro/" target="_blank" rel="external">YAML简介</a></li>
+<li><a href="http://yaml.org/" target="_blank" rel="external">The Official YAML Web Site</a></li>
+<li><a href="http://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank" rel="external">PyYaml</a></li>
+</ul>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/时间复杂度/" rel="tag">#时间复杂度</a>
-          
-            <a href="/tags/算法/" rel="tag">#算法</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/21/今天交女朋友啦/" rel="next" title="今天交女朋友啦~">
-                <i class="fa fa-chevron-left"></i> 今天交女朋友啦~
+              <a href="/2016/03/06/夯实基础-算法的时间复杂度/" rel="next" title="夯实基础 -- 算法的时间复杂度">
+                <i class="fa fa-chevron-left"></i> 夯实基础 -- 算法的时间复杂度
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/" rel="prev" title="Yaml Tutorial">
+              <a href="/2016/03/25/Yaml-Tutorial/" rel="prev" title="Yaml Tutorial">
                 Yaml Tutorial <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -328,8 +372,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/06/夯实基础-算法的时间复杂度/"
-           data-title="夯实基础 -- 算法的时间复杂度" data-url="http://codingwater.org/2016/03/06/夯实基础-算法的时间复杂度/">
+      <div class="ds-thread" data-thread-key="2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/"
+           data-title="Yaml Tutorial" data-url="http://codingwater.org/2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/">
       </div>
     
   </div>
@@ -441,7 +485,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table Of Contents</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Definition"><span class="nav-number">1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What_It_Is"><span class="nav-number">2.</span> <span class="nav-text">What It Is</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Relation_to_JSON"><span class="nav-number">3.</span> <span class="nav-text">Relation to JSON</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Relation_to_XML"><span class="nav-number">4.</span> <span class="nav-text">Relation to XML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Grammar"><span class="nav-number">5.</span> <span class="nav-text">Grammar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Demo"><span class="nav-number">6.</span> <span class="nav-text">Demo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#YAML_Online_Editor"><span class="nav-number">7.</span> <span class="nav-text">YAML Online Editor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyYaml"><span class="nav-number">8.</span> <span class="nav-text">PyYaml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">9.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
