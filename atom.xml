@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://codingwater.org/"/>
-  <updated>2017-04-07T10:58:50.000Z</updated>
+  <updated>2018-06-15T09:47:25.000Z</updated>
   <id>http://codingwater.org/</id>
   
   <author>
@@ -16,34 +16,23 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Let&#39;s Play Linux CLI Together</title>
-    <link href="http://codingwater.org/2017/04/07/Let-s-Play-Linux-CLI-Together/"/>
-    <id>http://codingwater.org/2017/04/07/Let-s-Play-Linux-CLI-Together/</id>
-    <published>2017-04-07T10:43:32.000Z</published>
-    <updated>2017-04-07T10:58:50.000Z</updated>
+    <title>金三银四聊聊换工作</title>
+    <link href="http://codingwater.org/2018/06/15/%E9%87%91%E4%B8%89%E9%93%B6%E5%9B%9B%E8%81%8A%E8%81%8A%E6%8D%A2%E5%B7%A5%E4%BD%9C/"/>
+    <id>http://codingwater.org/2018/06/15/金三银四聊聊换工作/</id>
+    <published>2018-06-15T09:46:43.000Z</published>
+    <updated>2018-06-15T09:47:25.000Z</updated>
     
-    <content type="html">
-
-	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;http://7xsrzn.com1.z0.glb.clouddn.com/Play_CLI.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
-	&lt;/div&gt;
-
-
-
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI0MzY2MTQzNQ==&amp;amp;mid=2247483659&amp;amp;idx=1&amp;amp;sn=7d775594cbb7aa3f42eeecce6a2945fb&amp;amp;chksm=e968ee1fde1f6709dff49146369d71fbab41963e7576d84c95ab34df67db62776386232eeca0#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;戳此阅读原文&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      
-
-	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;http://7xsrzn.com1.z0.glb.clouddn.com/Play_CLI.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
-	
+      &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI0MzY2MTQzNQ==&amp;amp;mid=2247483659&amp;amp;idx=1&amp;amp;sn=7d775594cbb7aa3f42eeecce6a2945fb&amp;amp;chksm
     
     </summary>
     
     
-      <category term="CLI" scheme="http://codingwater.org/tags/CLI/"/>
+      <category term="职场" scheme="http://codingwater.org/tags/%E8%81%8C%E5%9C%BA/"/>
     
   </entry>
   
@@ -52,7 +41,7 @@
     <link href="http://codingwater.org/2017/01/09/%E4%B8%80%E7%B2%92%E7%95%A5%E6%9C%89%E6%88%90%E6%95%88%E7%9A%84Management/"/>
     <id>http://codingwater.org/2017/01/09/一粒略有成效的Management/</id>
     <published>2017-01-09T04:55:59.000Z</published>
-    <updated>2017-01-09T07:17:01.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;经过了近两个月的忙碌，上周五顺利的发布了公司内部的一个CRM系统。就技术而已，项目本身没多大难度。但是，作为我踏入职场之后的第一次Project Management, 还是给我带来了很多新鲜的体验和不同的思考。所以，很值得来一次复盘。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://static5.depositphotos.com/1009659/496/i/450/depositphotos_4967133-stock-photo-crossword.jpg&quot; alt=&quot;management&quot;&gt;&lt;/p&gt;
@@ -141,7 +130,7 @@
     <link href="http://codingwater.org/2016/12/08/%E4%B9%9F%E8%81%8AJenkins/"/>
     <id>http://codingwater.org/2016/12/08/也聊Jenkins/</id>
     <published>2016-12-08T13:16:17.000Z</published>
-    <updated>2016-12-09T03:24:53.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;好久不更新，罪过罪过。是不是应该在Jenkins起个Job 帮助自己提高产量了。。。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.cloudbees.com/sites/default/files/blogger_importer/s1600/self-restart.png&quot; alt=&quot;Jenkins&quot;&gt;&lt;/p&gt;
@@ -203,7 +192,7 @@
     <link href="http://codingwater.org/2016/10/11/Java-%E6%97%A5%E5%BF%97%E7%9A%84%E6%B1%9F%E6%B9%96/"/>
     <id>http://codingwater.org/2016/10/11/Java-日志的江湖/</id>
     <published>2016-10-11T10:18:09.000Z</published>
-    <updated>2016-10-12T01:56:06.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;这个议题在网上已经有很多很多讨论的文章了，但是我还是决定自己“重造一遍轮子”。因为：&lt;/p&gt;
 &lt;p&gt; &lt;img src=&quot;http://7xsrzn.com1.z0.glb.clouddn.com/cishi.jpeg&quot; alt=&quot;诗句&quot;&gt;&lt;/p&gt;
@@ -325,7 +314,7 @@
     <link href="http://codingwater.org/2016/08/25/Docker-Kubernetes-Intro/"/>
     <id>http://codingwater.org/2016/08/25/Docker-Kubernetes-Intro/</id>
     <published>2016-08-25T10:16:18.000Z</published>
-    <updated>2016-09-27T01:09:05.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;What_is_Docker&quot;&gt;&lt;a href=&quot;#What_is_Docker&quot; class=&quot;headerlink&quot; title=&quot;What is Docker&quot;&gt;&lt;/a&gt;What is Docker&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Docker is the world’s leading software containerization platform&lt;/p&gt;
@@ -439,7 +428,7 @@
     <link href="http://codingwater.org/2016/08/18/Kubernetes%E9%9B%86%E7%BE%A4%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7-Heapster/"/>
     <id>http://codingwater.org/2016/08/18/Kubernetes集群性能监控-Heapster/</id>
     <published>2016-08-18T12:28:46.000Z</published>
-    <updated>2016-08-19T07:05:49.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;最近也是历经艰辛，搭建起了Kubernetes集群的性能监控工具Heapster,用起来感觉实在高大上。而且慢慢的，熬过了最开始最痛苦的开发转运维的过渡期之后，越来越能get到当运维的快感了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://image.slidesharecdn.com/artemzhurbila-dockerclusterssolit2015-150313153240-conversion-gate01/95/artem-zhurbila-docker-clusters-solit-2015-31-638.jpg?cb=1426261060&quot; alt=&quot;Heapster in Kubernetes&quot;&gt;&lt;/p&gt;
@@ -492,7 +481,7 @@
     <link href="http://codingwater.org/2016/08/09/%E4%BD%BF%E7%94%A8Kubernetes%E6%94%B9%E9%80%A0%E7%B1%B3%E5%96%9C%E9%83%A8%E7%BD%B2%E7%8E%AF%E5%A2%83-%E9%98%B6%E6%AE%B5%E6%80%A7%E6%80%BB%E7%BB%93/"/>
     <id>http://codingwater.org/2016/08/09/使用Kubernetes改造米喜部署环境-阶段性总结/</id>
     <published>2016-08-09T01:07:31.000Z</published>
-    <updated>2016-08-10T07:54:38.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;又是一个月没有更新博客了，白白的烧了62块钱的服务器租赁费。倒不是不想更新，实在是因为正在解决一个颗粒度很大的技术问题。已经断断续续被这个问题折磨了快两个月的时间，昨天晚上终于取得了阶段性成果，所以赶紧来post一篇。希望今天能早点下班，毕竟七夕。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://img.xiazaizhijia.com/uploads/2016/0808/20160808105639891.png&quot; alt=&quot;七夕之歌&quot;&gt;&lt;/p&gt;
@@ -570,7 +559,7 @@
     <link href="http://codingwater.org/2016/07/03/Mac%E8%8C%B6%E8%AF%9D%E4%BC%9A/"/>
     <id>http://codingwater.org/2016/07/03/Mac茶话会/</id>
     <published>2016-07-03T15:25:24.000Z</published>
-    <updated>2016-07-07T03:40:36.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;入手Mac有4个多月了，虽然借的钱还没有还完嘿嘿嘿。向朋友推荐电子产品的时候，我是这样说的:“去年买的所有东西中，我觉得Kindle是最让我满意的。今年是Mac，这简直是个艺术品。”&lt;/p&gt;
 &lt;p&gt;最近听到有个程序员同事说，因为不太会用Mac，所以虽然买了，但是还是天天用Windows开发，希望能举办个茶话会，大家交流一下怎么用。于是萌生了写这篇博文的念头。尽管我也算不上什么老司机，但是多亏了一些老司机给我带过一段路，所以还是知道Mac的一些科学使用方法的，另外除了交流之用，也会用持续更新的方式来促进自己成长，早日成为一名Mac老司机~&lt;/p&gt;
@@ -628,7 +617,7 @@
     <link href="http://codingwater.org/2016/06/09/%E7%99%BE%E5%AD%97%E4%B9%A6%E8%AF%84/"/>
     <id>http://codingwater.org/2016/06/09/百字书评/</id>
     <published>2016-06-09T10:18:43.000Z</published>
-    <updated>2016-12-17T04:20:44.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;想写这样一篇博文有一段时间了，主要是因为入手kindle之后，看书速度飙升。这半年大概光用kindle就看了15本书吧，对我来说算挺多了，而且主要是工作之余能抽出时间看这么多书，对自己挺满意的。&lt;/p&gt;
 &lt;p&gt;不打算写太长的书评，一是因为一般我读书只会读一遍，自己水平有限，写不出太深刻的东西。二是长的不一定是好的，浓缩的更像是精华。&lt;/p&gt;
@@ -681,7 +670,7 @@
     <link href="http://codingwater.org/2016/06/09/%E5%8C%86%E5%8C%86/"/>
     <id>http://codingwater.org/2016/06/09/匆匆/</id>
     <published>2016-06-09T08:22:36.000Z</published>
-    <updated>2016-06-09T08:37:02.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;忽的一下两个月没更博了，先记一下这两个月干的事&lt;/p&gt;
 &lt;ul&gt;
@@ -737,7 +726,7 @@
     <link href="http://codingwater.org/2016/03/30/%E5%A0%86%E7%B3%96%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     <id>http://codingwater.org/2016/03/30/堆糖实习总结/</id>
     <published>2016-03-30T04:17:42.000Z</published>
-    <updated>2016-04-09T01:32:43.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;时间过得真快，2015.06.03入职，到本周结束，也就是2016.04.01，我在堆糖的实习期也就结束了。十个月的实习期学到很多，趁这个机会好好梳理一下。&lt;br&gt;&lt;img src=&quot;http://7xsrzn.com1.z0.glb.clouddn.com/duitanglogo.png&quot; alt=&quot;堆糖LOGO&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -832,7 +821,7 @@
     <link href="http://codingwater.org/2016/03/25/Yaml-Tutorial/"/>
     <id>http://codingwater.org/2016/03/25/Yaml-Tutorial/</id>
     <published>2016-03-25T06:14:49.000Z</published>
-    <updated>2016-04-13T12:50:10.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。&lt;/p&gt;
 &lt;hr&gt;
@@ -910,91 +899,11 @@ interests:
   </entry>
   
   <entry>
-    <title>Yaml Tutorial</title>
-    <link href="http://codingwater.org/2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/"/>
-    <id>http://codingwater.org/2016/03/25/share-doc-2016-03-25-Yaml-Tutorial/</id>
-    <published>2016-03-25T06:14:49.000Z</published>
-    <updated>2016-10-12T03:06:50.000Z</updated>
-    
-    <content type="html">&lt;p&gt;最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; class=&quot;headerlink&quot; title=&quot;Definition&quot;&gt;&lt;/a&gt;Definition&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;YAML Ain’t Markup Language （Yaml不是标记语言，递归否定，可能是借鉴&lt;a href=&quot;https://zh.wikipedia.org/wiki/GNU&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GNU&lt;/a&gt;的梗）&lt;/p&gt;
-&lt;h2 id=&quot;What_It_Is&quot;&gt;&lt;a href=&quot;#What_It_Is&quot; class=&quot;headerlink&quot; title=&quot;What It Is&quot;&gt;&lt;/a&gt;What It Is&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;YAML is a human friendly data serialization standard for all programming languages.&lt;br&gt;(YAML是一个human friendly的数据序列化标准，适用所有的编程语言)&lt;/p&gt;
-&lt;h2 id=&quot;Relation_to_JSON&quot;&gt;&lt;a href=&quot;#Relation_to_JSON&quot; class=&quot;headerlink&quot; title=&quot;Relation to JSON&quot;&gt;&lt;/a&gt;Relation to JSON&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;都是human readable的数据交换格式。但是json对程序更友好，而yaml把human readability的优先级设置得更高。yaml在不同的编程环境中交互的时候需要更复杂的逻辑处理。&lt;/p&gt;
-&lt;h2 id=&quot;Relation_to_XML&quot;&gt;&lt;a href=&quot;#Relation_to_XML&quot; class=&quot;headerlink&quot; title=&quot;Relation to XML&quot;&gt;&lt;/a&gt;Relation to XML&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;虽然在很多应用领域两者处于相互竞争的状态，但两者之间并没有任何直接关系。YAML专注于做数据序列化，而XML是为了支持文档的结构化而设计的。&lt;/p&gt;
-&lt;h2 id=&quot;Grammar&quot;&gt;&lt;a href=&quot;#Grammar&quot; class=&quot;headerlink&quot; title=&quot;Grammar&quot;&gt;&lt;/a&gt;Grammar&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Structure(结构体)，用空格展示。&lt;/li&gt;
-&lt;li&gt;Sequence(数组)， 用“-”来表示。&lt;/li&gt;
-&lt;li&gt;Map(键值对)，用“:”分隔。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Demo&quot;&gt;&lt;a href=&quot;#Demo&quot; class=&quot;headerlink&quot; title=&quot;Demo&quot;&gt;&lt;/a&gt;Demo&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;一般YAML文件的扩展名为.yaml,例如下面的文件就是Dijinchao.yaml&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;name: 3D  # K-V&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;age: 23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;work:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    company: duitang  # Structure,空格&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    job_title: Develop Engineer&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;interests:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - Python  #Sequence 用“-”表示&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - Linux   #Sequence 用“-”表示&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - 大保健   #Sequence 用“-”表示&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;YAML_Online_Editor&quot;&gt;&lt;a href=&quot;#YAML_Online_Editor&quot; class=&quot;headerlink&quot; title=&quot;YAML Online Editor&quot;&gt;&lt;/a&gt;YAML Online Editor&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://codebeautify.org/yaml-validator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://codebeautify.org/yaml-validator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://codebeautify.org/yaml-to-json-xml-csv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://codebeautify.org/yaml-to-json-xml-csv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.yamllint.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.yamllint.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;PyYaml&quot;&gt;&lt;a href=&quot;#PyYaml&quot; class=&quot;headerlink&quot; title=&quot;PyYaml&quot;&gt;&lt;/a&gt;PyYaml&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;YAML是一个规范，各个语言都有对这个规范的实现。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;C/C++ &lt;ul&gt;
-&lt;li&gt;libyaml&lt;/li&gt;
-&lt;li&gt;yaml-cpp&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Java:&lt;ul&gt;
-&lt;li&gt;JYaml&lt;/li&gt;
-&lt;li&gt;YamlBeans&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Python&lt;ul&gt;
-&lt;li&gt;PyYaml&lt;/li&gt;
-&lt;li&gt;PySyck&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;……&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;还有很多语言的各种实现版本，就不一一列举了。本次采用的pyresttest框架是用Python写的,其中就依赖了PyYaml.所以这里简略的介绍一下PyYaml，目的在于感性的认知pyresttest是如何工作的：&lt;/p&gt;
-&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;首先是&lt;a href=&quot;http://pyyaml.org/wiki/PyYAML&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装PyYaml&lt;/a&gt;,然后执行如下代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; yaml
-&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;yaml.load(&lt;span class=&quot;string&quot;&gt;&quot;&quot;&quot;
-name: 3D  # K-V
-age: 23
-work:
-    company: duitang  # Structure,空格
-    job_title: Develop Engineer
-interests:
-    - Python  #Sequence 用“-”表示
-    - Linux   #Sequence 用“-”表示
-    - 大保健   #Sequence 用“-”表示
-&quot;&quot;&quot;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;运行结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xsrzn.com1.z0.glb.clouddn.com/yaml2.png&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;可以看到是yaml.load()拿到了一个python的dict对象，拿到这个对象之后就可以用代码去做各种各样的逻辑处理了.所以测试这边只需要保证.yaml格式的文本文件书写正确，就能利用框架去做逻辑验证，完成自动化测试的需求。&lt;/p&gt;
-&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/xml/x-cn-yamlintro/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;YAML简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://yaml.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The Official YAML Web Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://pyyaml.org/wiki/PyYAMLDocumentation&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PyYaml&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在参与公司测试团队的APITest的一些实施工作,选用的自动化测试框架对Yaml有所依赖,所以抽时间写了一份文档,为测试团队的同学们提供一些基础知识的入门支持。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; cla
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>夯实基础 -- 算法的时间复杂度</title>
     <link href="http://codingwater.org/2016/03/06/%E5%A4%AF%E5%AE%9E%E5%9F%BA%E7%A1%80-%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     <id>http://codingwater.org/2016/03/06/夯实基础-算法的时间复杂度/</id>
     <published>2016-03-06T07:12:12.000Z</published>
-    <updated>2016-06-08T08:15:56.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;因为Hexo对数学公式的显示支持的不是很人性化，所以&lt;a href=&quot;https://www.zybuluo.com/waterdkx/note/266155&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文请戳这里&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xsrzn.com1.z0.glb.clouddn.com/zoro.jpeg&quot; alt=&quot;无奈&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1021,7 +930,7 @@ interests:
     <link href="http://codingwater.org/2016/02/21/%E4%BB%8A%E5%A4%A9%E4%BA%A4%E5%A5%B3%E6%9C%8B%E5%8F%8B%E5%95%A6/"/>
     <id>http://codingwater.org/2016/02/21/今天交女朋友啦/</id>
     <published>2016-02-21T14:47:49.000Z</published>
-    <updated>2016-04-09T02:37:14.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;其实我很想发个朋友圈说:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1056,7 +965,7 @@ interests:
     <link href="http://codingwater.org/2016/02/20/%E8%AF%BB%E4%B9%A6-%E6%9D%8E%E9%B8%BF%E7%AB%A0%E4%BC%A0/"/>
     <id>http://codingwater.org/2016/02/20/读书-李鸿章传/</id>
     <published>2016-02-20T10:29:33.000Z</published>
-    <updated>2016-08-18T12:53:55.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;这本书是梁任公为李鸿章所作之传.读完全篇,最大的感触是全书第一页讲到的这段话:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1087,7 +996,7 @@ interests:
     <link href="http://codingwater.org/2016/02/03/%E8%B8%A9%E5%9D%91%E8%AE%B0-%E7%B3%BB%E5%88%97-%E7%94%A8Jackson%E8%A7%A3%E5%86%B3%E5%AD%90%E7%B1%BB%E5%BA%8F%E5%88%97%E5%8C%96%E5%90%8E-%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%88%90%E7%88%B6%E7%B1%BB%E7%9A%84%E5%BC%82%E5%B8%B8/"/>
     <id>http://codingwater.org/2016/02/03/踩坑记-系列-用Jackson解决子类序列化后-反序列化成父类的异常/</id>
     <published>2016-02-03T10:01:14.000Z</published>
-    <updated>2016-06-08T08:18:08.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;u95EE_u9898_u63CF_u8FF0&quot;&gt;&lt;a href=&quot;#u95EE_u9898_u63CF_u8FF0&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;一个Driver对象，我需要对它进行序列化，Driver对象有一个属性，是一个Car对象，然后Car是一个父类，Tesla(特斯拉)是Car的一个子类，这个子类有父类没有的一个属性，比如叫”chargingTime(充电时间)”&lt;/p&gt;
 &lt;ul&gt;
@@ -1142,7 +1051,7 @@ interests:
     <link href="http://codingwater.org/2016/01/31/%E4%B8%80%E4%B8%AA%E5%86%99%E4%BB%A3%E7%A0%81%E7%9A%84%E8%B0%83%E9%85%92%E5%B8%88/"/>
     <id>http://codingwater.org/2016/01/31/一个写代码的调酒师/</id>
     <published>2016-01-31T06:23:46.000Z</published>
-    <updated>2016-04-09T05:06:03.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;在一家叫”不空”的酒吧当周末义工接近两个月了.快要过年了,调酒的手艺学得也算小有所成,是时候装一波十三了哈哈哈哈哈哈哈哈.&lt;/p&gt;
 &lt;h2 id=&quot;u5E97_u957F&quot;&gt;&lt;a href=&quot;#u5E97_u957F&quot; class=&quot;headerlink&quot; title=&quot;店长&quot;&gt;&lt;/a&gt;店长&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160; 先来说一下酒吧的店长吧:Django,一条与哈士奇,萨摩耶并称”雪地三傻”的阿拉斯加.它是老板养的一条狗,据说开酒吧的目的是为了攒够钱送Django回阿拉斯加去拉雪橇…真是个冻人的故事.&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;好多妹子来酒吧都是冲着Django来的,有时候Django不在店里,妹子居然转身就走…&lt;/p&gt;
@@ -1201,7 +1110,7 @@ interests:
     <link href="http://codingwater.org/2016/01/30/%E8%B8%A9%E5%9D%91%E8%AE%B0-%E7%B3%BB%E5%88%97-Guava-Lists-transform/"/>
     <id>http://codingwater.org/2016/01/30/踩坑记-系列-Guava-Lists-transform/</id>
     <published>2016-01-30T06:06:14.000Z</published>
-    <updated>2016-06-08T08:18:28.000Z</updated>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;在工作中,有些场景会需要将一种Object类型的List数据转换成另一种Object类型的数据.比如做爬虫时,希望将爬到的数据换一种领域模型保存到自己的数据库里面去,这个过程中会涉及到一个循环转换的步骤.前两天我就在这个步骤上踩了一个坑,所以趁周末有空特地撰文以记之,让这个坑踩得值一点.&lt;/p&gt;
 &lt;hr&gt;
@@ -1245,28 +1154,83 @@ interests:
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://codingwater.org/2016/01/07/hello-world/"/>
-    <id>http://codingwater.org/2016/01/07/hello-world/</id>
-    <published>2016-01-07T09:24:48.000Z</published>
-    <updated>2016-01-07T09:24:48.000Z</updated>
+    <title>再见，2015</title>
+    <link href="http://codingwater.org/2015/12/31/%E5%86%8D%E8%A7%812015/"/>
+    <id>http://codingwater.org/2015/12/31/再见2015/</id>
+    <published>2015-12-31T10:29:04.000Z</published>
+    <updated>2018-06-15T09:29:03.000Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick_Start&quot;&gt;&lt;a href=&quot;#Quick_Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create_a_new_post&quot;&gt;&lt;a href=&quot;#Create_a_new_post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run_server&quot;&gt;&lt;a href=&quot;#Run_server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate_static_files&quot;&gt;&lt;a href=&quot;#Generate_static_files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy_to_remote_sites&quot;&gt;&lt;a href=&quot;#Deploy_to_remote_sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;还有几个小时2015就要结束了。早上发了条朋友圈，感叹了一下2015.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Life is bz, sometimes tired, sometimes really tired. 2015,你先走,我还有点事。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;之前几年一直都是和室友在宿舍煮火锅喝啤酒一起跨年，今年看来要一个人倒数了。不过生活总要向前，既然出来工作了，这种变化也是难以避免的。出来混整整半年了，2015是满满的充实的一整年，但也很疲惫。回头总结一下，也算给这位朋友践个行。&lt;/p&gt;
+&lt;h3 id=&quot;u6821_u56EDRMB&quot;&gt;&lt;a href=&quot;#u6821_u56EDRMB&quot; class=&quot;headerlink&quot; title=&quot;校园RMB&quot;&gt;&lt;/a&gt;校园RMB&lt;/h3&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;自己牵头的一个项目从去年9月做到了今年5月底的样子，全情投入，收获也颇丰，买了域名备了案，发了传单做地推，见了风投没要钱，遭遇黑帽，打了攻防。做这个项目认识了好些人，开了眼界也交了些朋友。不过最终还是以失败收尾，用户停在了500+。坦然接受，失败的原因我清清楚楚：需要成长。所以迫不及待，6月不到就奔到上海来找工作了。&lt;/p&gt;
+&lt;h3 id=&quot;u79C1_u6D3B&quot;&gt;&lt;a href=&quot;#u79C1_u6D3B&quot; class=&quot;headerlink&quot; title=&quot;私活&quot;&gt;&lt;/a&gt;私活&lt;/h3&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;从去年开始接一点私活，今年算是接的还比较多。第一笔是帮一个财大的博士生妹子做她的毕业论文程序实现，一天解决战斗，拿了1k.不过这个是14年的交易，15年的时候了她还找过我，那次工期有点长，不过拿了3.5k,算一笔大单了。再之后，作为项目经理帮学校做学生信息管理系统，做了两月，工资应该也是有4k的样子，妈的学校非得按勤工助学的方式发，一个月最多500，寒暑假还不发。所以操蛋的直到现在才给我发了一半的工资，后面那一半不知道什么时候能结清。一个人在上海，好多次经济危机，如果能有学校欠我的那点钱，可能就摆平了，最后只能得出结论：不要跟学校做生意。再之后了，在知乎上认识了一个业务方，3天时间满足其需求，拿了1.8k.轻轻松松爽爽快快。拿钱之后给老姐秒了一部MX5,算是感谢她在我遭遇经济危机时请我吃了鸡公煲的恩泽。再后来，技术不断长进，帮公司刷了两次投票之后，发现自己可以做的还是蛮多的，所以在朋友圈里接私活。朋友帮忙介绍了一笔500的单子，本来活是很轻松，但是时间跨度有点长，耗了近半个月。这一单算感觉比较亏的。以后应该还会接一些私活，不过2015就这样了。&lt;/p&gt;
+&lt;h3 id=&quot;u5806_u7CD6&quot;&gt;&lt;a href=&quot;#u5806_u7CD6&quot; class=&quot;headerlink&quot; title=&quot;堆糖&quot;&gt;&lt;/a&gt;堆糖&lt;/h3&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;6.1到上海，6.3正式入职。到今天正好半年了。收获是很多，在堆糖实习是一件蛮开心的事，技术上的成长达到了自己的预期，超出预期的是交到一些有意思的朋友，学会了打桌上足球，学会玩狼人杀，喜欢上了羽毛球。也有些意料之外的遭遇，比如房子被公安局的人抡锤子给砸了，保研一共6个名额而我恰巧排第7，从小到大第一次给自己买的adidas的滑板鞋，晒在阳台上居然被人给偷走了。奥，说到被偷，大学的第三辆自行车也在堆糖楼下被偷了，亏我还托朋友从学习开车把自行车拖到杭州城站然后托运到上海，再从上海南站骑到中远两湾城。&lt;/p&gt;
+&lt;h3 id=&quot;u7ECF_u6D4E_u72EC_u7ACB&quot;&gt;&lt;a href=&quot;#u7ECF_u6D4E_u72EC_u7ACB&quot; class=&quot;headerlink&quot; title=&quot;经济独立&quot;&gt;&lt;/a&gt;经济独立&lt;/h3&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;这应该是自己今年做的最满意的一件事，从3月份最后拿了家里给的3000块钱之后，再也没向家里要过一分钱。除了接私活赚的钱之外，奖学金也帮了一些忙。不过刚来上海的第一个月还是靠朋友帮了不少忙。谢谢老九，谢谢大嫂，谢谢老乡，谢谢老姐。fuck欠我工资的学校。经济上缓过来之后，国庆自己买机票飞到天津去浪了一圈，给自己买kindle,双十一花了1k+又买了10多个包裹，其中就包括那双自己很喜欢的adidas滑板鞋。周末可以经常请老姐吃饭看电影，过年回家和返程的动车高铁票也一手包办。奥对了，还有大四的学费，拖欠了3个多月之后终于也靠奖学金和工资自己给交上了。满意，满意。&lt;/p&gt;
+&lt;h3 id=&quot;u4E0A_u6D77_uFF0C_u676D_u5DDE&quot;&gt;&lt;a href=&quot;#u4E0A_u6D77_uFF0C_u676D_u5DDE&quot; class=&quot;headerlink&quot; title=&quot;上海，杭州&quot;&gt;&lt;/a&gt;上海，杭州&lt;/h3&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;因为实习的缘故，学校里面偶尔又有些事要处理，这半年光往返杭州和上海就跑了8趟。其中还有两趟是单日折返跑，蛮累的。这两座城市对我而言都算比较熟悉了，相信未来这两个城市的关系会更加紧密。but,我确实还是更喜欢上海。所以，毕业了应该会留在上海了。I Do Like ShangHai.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;还有一些细节一下子想不起来太多，就先这样吧，最先想到的也肯定是对自己产生影响最深刻的。真的没时间好好的送一送2015，还要忙着code,忙着交房租，忙着完成妈妈的嘱托，忙着想办法顺利毕业。各种忙，都靠自己动手解决，也许生存的压力会把生活压榨的少了一些诗意，但这就是我的2015，靠自己，过自己想要的生活。&lt;/p&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;再见，2015，我会好好对你妹妹2016的。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io
+      &lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;还有几个小时2015就要结束了。早上发了条朋友圈，感叹了一下2015.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Life is bz, sometimes tired, sometimes really tired. 2
     
     </summary>
+    
+      <category term="Before 2016" scheme="http://codingwater.org/categories/Before-2016/"/>
+    
+    
+      <category term="随笔杂记" scheme="http://codingwater.org/tags/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于《校园RMB》用户隐私相关问题的声明与致歉信</title>
+    <link href="http://codingwater.org/2015/05/06/%E5%85%B3%E4%BA%8E%E3%80%8A%E6%A0%A1%E5%9B%ADRMB%E3%80%8B%E7%94%A8%E6%88%B7%E9%9A%90%E7%A7%81%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E7%9A%84%E5%A3%B0%E6%98%8E%E4%B8%8E%E8%87%B4%E6%AD%89%E4%BF%A1/"/>
+    <id>http://codingwater.org/2015/05/06/关于《校园RMB》用户隐私相关问题的声明与致歉信/</id>
+    <published>2015-05-06T05:08:04.000Z</published>
+    <updated>2018-06-15T09:29:03.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;这是我15年5月份的一篇博文，&lt;a href=&quot;http://user.qzone.qq.com/935961250/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点此查看原文&lt;/a&gt;&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;做的第一款互联网产品,碰到了很多问题,也明白了一些东西.留着这篇”自己打脸”的文章,主要是为了提醒自己:有些错不要再犯了,但有些仇该记的还是得记住.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;关于《校园RMB》网站用户个人数据的隐私问题，身边一直有同学、朋友甚至老师用各自的方式向我们表达过他们的观点，项目组也因为对这个问题的疏忽和不重视付出了一定的代价从而认识到问题的严重性。所以近期特别围绕这个问题对网站的功能做了增改，也想借发布新功能的机会向各位同学特别说明以下几点，并向已经入驻平台的老用户表示诚挚的歉意。&lt;/p&gt;
+&lt;h2 id=&quot;u91CD_u8981_u58F0_u660E&quot;&gt;&lt;a href=&quot;#u91CD_u8981_u58F0_u660E&quot; class=&quot;headerlink&quot; title=&quot;重要声明&quot;&gt;&lt;/a&gt;重要声明&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;项目组承诺非经法定原因或用户事先许可，项目组不会将用户数据（密码、联系方式等）透露给除本站合法用户外的任意第三方，也不会将用户数据用于任何的商业买卖等恶劣行径。 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关于用户教务网的密码，本站采用MD5方式对其进行加密后存储。最新推出的功能中，用户可以通过点击PC端主界面左上角下拉菜单中的“修改密码”来完成校园RMB账号密码的修改，当然用户也可以修改教务网的密码，以确保个人账号的安全性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;网站通过用户教务网账号仅获取学生姓名、性别、出生日期、籍贯、学院、专业名称、行政班、当前所在级和联系电话以及账号密码(加密处理后的数据)等共11项基本信息，如果觉得不愿向其他学生用户公开自己的联系方式，可以通过下图所示的开关按钮对联系方式进行加密处理。若不愿意向任何用户公开自己的任何信息，可以通过点击首页左上角的下拉菜单中的“注销账号”按钮将个人账号彻底注销，一经注销，用户在校园人脉邦网产生的所有数据都将被删除。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;u8F85_u52A9_u6027_u8BF4_u660E_u6750_u6599&quot;&gt;&lt;a href=&quot;#u8F85_u52A9_u6027_u8BF4_u660E_u6750_u6599&quot; class=&quot;headerlink&quot; title=&quot;辅助性说明材料&quot;&gt;&lt;/a&gt;辅助性说明材料&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;列表项用户可通过下图中的开关按钮来选择是否对其他用户公开自己的联系方式。&lt;br&gt;&lt;img src=&quot;http://img5.duitang.com/uploads/item/201601/24/20160124173458_BSK3R.png&quot; alt=&quot;图1&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下图为“修改密码”和“注销账号”功能区，注销后可点击网站首页foot部分的“关于校园人脉邦”链接，会发现入驻人数有减少。如果还不确定是否删除，可通过同学的账号登陆后在人脉检索模块通过姓名直接检索，即可验证。&lt;br&gt;&lt;img src=&quot;http://img4.duitang.com/uploads/item/201601/24/20160124173514_yG2du.thumb.700_0.png&quot; alt=&quot;图2&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cdn.duitang.com/uploads/item/201601/24/20160124173523_F54Yx.png&quot; alt=&quot;图3&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下图是数据库中”学生表”的部分字段，其中红色箭头所指部分为加密后的密码，该加密方式解密成本相对其他加密方式都比较高。&lt;br&gt;&lt;img src=&quot;http://r.photo.store.qq.com/psb?/V12Ygc7P0WPY9F/HB43v8.ovxzWMJytl6a9G1cKKDaGmKUIdnFOTFsGc.c!/o/dB4AAAAAAAAA&amp;amp;ek=1&amp;amp;kp=1&amp;amp;pt=0&amp;amp;bo=bwI9AG8CPQADACU!&amp;amp;su=195422273&amp;amp;sce=0-12-12&amp;amp;rf=2-9&quot; alt=&quot;图4&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关于“注销账号”功能，后台采用的是真删除，而非仅仅改变某个字段的值的伪删除方式。具体删除代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;annotation&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;deleteUser&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Student me)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    HibernateTemplate template = &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;.getHibernateTemplate();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    template.setFlushMode(HibernateTemplate.FLUSH_EAGER);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    template.delete(me);  &lt;span class=&quot;comment&quot;&gt;//删除用户&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;如果对于注销账号功能依然存疑，可以直接与我联系，如果有必要现场演示也是可以的.&lt;/p&gt;
+&lt;h2 id=&quot;u81F4_u6B49_u4FE1&quot;&gt;&lt;a href=&quot;#u81F4_u6B49_u4FE1&quot; class=&quot;headerlink&quot; title=&quot;致歉信&quot;&gt;&lt;/a&gt;致歉信&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;首先我(软件12A班戴开显)谨代表“校园RMB”项目组向因为入驻了“校园人脉邦”网而受到关于个人隐私泄露等问题困扰的同学以及在不明具体情况就被“骗”进“校园人脉邦”网的同学表示歉意，之前是我们考虑不周做的不好，还请各位同学多多包涵。&lt;/p&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;关于“校园人脉邦”这款产品，我们给TA的定位是大学校园版的LinkedIn(领英,职场社交软件)，我们的初心是希望能为同学们打造一个基于实名制的有价值信息共享平台，并提供校园内的人力资源检索功能，方便各位同学在各式各样的竞赛中找符合条件的队友、找心仪的项目等等。可能我们的步子一开始迈得有点大，然后因为我本人有点‘急功近利’的想让用户量迅速增长，采取的引流措施中对于用户隐私协议声明的也不够明显，同时也因自身法律知识欠缺意识薄弱，导致越来越多的关于用户隐私问题的爆发，我本人和项目组都难辞其咎。为此我们认真反思了自己的不当行为，并最终决定上线诸如‘注销账号’等功能来弥补过失。在这里也诚挚的希望同学们念在我们初次做产品，很多地方都想的不够周到和深远，给我们多一点的包涵和宽容，谢谢。&lt;/p&gt;
+&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;&lt;strong&gt;PS&lt;/strong&gt;：虽然碰到很多问题，项目我们依然打算进行下去。为了在以后的路上不再犯类似的错误，项目组真诚的希望能邀请一位法学专业的小伙伴入伙，教育教育我这个大法盲，也让项目组步入正轨。感兴趣的同学可以通过该链接www.xiaoyuanrmb.com先了解一下我们的项目，有意向入伙的同学可通过发送电子邮件到  waterdkx@163.com  与我联系，最好能附上几句简单的自我介绍，期待你的加入，谢谢。&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;噢还有，关于我本人嫖娼被抓的传闻，虽然我对生活一直怀着一种求艳遇的心态，但并不打算在国内作案，有机会的话未来想去一次岛国。所以还请各位明察,感激不尽。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;这是我15年5月份的一篇博文，&lt;a href=&quot;http://user.qzone.qq.com/935961250/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点此查看原文&lt;/a&gt;&lt;br&gt;&amp;#1
+    
+    </summary>
+    
+      <category term="Before 2016" scheme="http://codingwater.org/categories/Before-2016/"/>
     
     
   </entry>
